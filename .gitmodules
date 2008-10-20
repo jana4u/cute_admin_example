@@ -1,3 +1,12 @@
 [submodule "vendor/rails"]
 	path = vendor/rails
 	url = git://github.com/rails/rails.git
+[submodule "vendor/plugins/localized_dates"]
+	path = vendor/plugins/localized_dates
+	url = git://github.com/clemens/localized_dates.git
+[submodule "vendor/plugins/i18n_label"]
+	path = vendor/plugins/i18n_label
+	url = git://github.com/iain/i18n_label.git
+[submodule "vendor/plugins/searchgasm"]
+	path = vendor/plugins/searchgasm
+	url = git://github.com/binarylogic/searchgasm.git
