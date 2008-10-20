@@ -1,0 +1,34 @@
+<div class="admin-main">
+<div class="admin-block">
+<table class="admin-table-form">
+  <tr>
+    <td class="label-cell"><%= f.label :first_name %></td>
+    <td class="content-cell"><%= f.text_field :first_name %><%= f.error_message_on :first_name %></td>
+  </tr>
+  <tr>
+    <td class="label-cell"><%= f.label :last_name %></td>
+    <td class="content-cell"><%= f.text_field :last_name %><%= f.error_message_on :last_name %></td>
+  </tr>
+  <tr>
+    <td class="label-cell"><%= f.label :born_on %></td>
+    <td class="content-cell"><%= f.date_select :born_on %><%= f.error_message_on :born_on %></td>
+  </tr>
+  <tr>
+    <td class="label-cell"><%= f.label :years_employed %></td>
+    <td class="content-cell"><%= f.text_field :years_employed %><%= f.error_message_on :years_employed %></td>
+  </tr>
+  <tr>
+    <td class="label-cell"><%= f.label :manager %></td>
+    <td class="content-cell"><%= f.check_box :manager %><%= f.error_message_on :manager %></td>
+  </tr>
+  <tr>
+    <td class="label-cell"><%= f.label :note %></td>
+    <td class="content-cell"><%= f.text_area :note %><%= f.error_message_on :note %></td>
+  </tr>
+  <tr>
+    <td class="label-cell"><%= f.label :company_id %></td>
+    <td class="content-cell"><%= f.select :company_id, [[translate(:choose, :default => '[ choose ]', :scope => [:railties, :scaffold]), nil]]+Company.for_select %><%= f.error_message_on :company_id %></td>
+  </tr>
+</table>
+</div>
+</div>

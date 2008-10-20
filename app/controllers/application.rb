@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
       locale_file = "#{LOCALES_DIRECTORY}#{I18n.locale}.#{type}"
       if File.exists?(locale_file)
         @locale_files << locale_file
-        I18n.load_translations locale_file
+        I18n.load_path << locale_file
       end
     end
     Searchgasm::Config.configure do |config|

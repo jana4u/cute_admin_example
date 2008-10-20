@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/searchgasm"]
 	path = vendor/plugins/searchgasm
 	url = git://github.com/binarylogic/searchgasm.git
+[submodule "vendor/plugins/cute_admin"]
+	path = vendor/plugins/cute_admin
+	url = git://github.com/jana4u/cute_admin.git
