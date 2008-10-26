@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  company: 
+  employee_number: 1
+  first_name: MyString
+  last_name: MyString
+  age: 1
+  street: MyString
+  house_number: MyString
+  city: MyString
+  zip_code: MyString
+  country: MyString
+  note: MyText
+  manager: false
+
+two:
+  company: 
+  employee_number: 1
+  first_name: MyString
+  last_name: MyString
+  age: 1
+  street: MyString
+  house_number: MyString
+  city: MyString
+  zip_code: MyString
+  country: MyString
+  note: MyText
+  manager: false
