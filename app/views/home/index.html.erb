@@ -19,6 +19,9 @@
   <li><%= link_to(PhoneNumber.human_name(:count => 2), phone_numbers_path) %></li>
 </ul>
 
+<p><%= I18n.t 'txt.more' %>: <%= link_to("http://github.com/jana4u/cute_admin", "http://github.com/jana4u/cute_admin") %><br />
+<%= I18n.t 'txt.get_example' %>: <%= link_to("http://github.com/jana4u/cute_admin_example", "http://github.com/jana4u/cute_admin_example") %></p>
+
 <p>Copyright &copy; 2008 <%= mail_to("jana4u@seznam.cz", "Jana4U") %>, released under the MIT license</p>
 
 </body>

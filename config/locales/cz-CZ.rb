@@ -240,6 +240,8 @@
     :txt => {
       :choose_language => "Zvolte jazyk",
       :example => "ukázka",
+      :more => "Více informací o plug-inu cute_admin naleznete na",
+      :get_example => "Tuto ukázkovou aplikaci můžete získat na",
     }
   }
 }

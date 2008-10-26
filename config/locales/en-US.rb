@@ -115,6 +115,8 @@
     :txt => {
       :choose_language => "Choose Language",
       :example => "Example",
+      :more => "For more information about cute_admin plug-in see",
+      :get_example => "This sample application can be found at",
     }
   }
 }

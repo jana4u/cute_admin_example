@@ -14,4 +14,7 @@ Installation:
 7. rake cute_admin:generate_with_associations
 8. ./script/server
 
+Source code is available at: http://github.com/jana4u/cute_admin_example
+Source code of rails plug-in cute_admin is available at: http://github.com/jana4u/cute_admin
+
 Copyright (c) 2008 Jana4U <jana4u@seznam.cz>, released under the MIT license
