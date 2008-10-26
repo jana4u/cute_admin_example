@@ -11,6 +11,7 @@ Installation:
 4. rake gems:install
 5. rake db:migrate
 6. rake db:populate
-7. ./script/server
+7. rake cute_admin:generate_with_associations
+8. ./script/server
 
 Copyright (c) 2008 Jana4U <jana4u@seznam.cz>, released under the MIT license

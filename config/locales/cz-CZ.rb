@@ -3,10 +3,6 @@
 
 { :'cz-CZ' => {
 
-    # Static texts
-    :locale         => 'Jazyk',
-    :switch_locale  => 'Jazyky:',
-
     # ActiveSupport
     :support => {
       :array => {
@@ -153,12 +149,59 @@
         }
       },
       :models => {
-        :developer => "Vývojář",
+        :employee => {
+          :one => "Zaměstnanec",
+          :other => "Zaměstnanci",
+        },
+        :company => {
+          :one => "Podnik",
+          :other => "Podniky",
+        },
+        :phone_number => {
+          :one => "Telefonní číslo",
+          :other => "Telefonní čísla",
+        },
+        :email => {
+          :one => "Emailová adresa",
+          :other => "Emailové adresy",
+        },
       },
       :attributes => {
-        :developer => {
+        :employee => {
+          :employee_number => "Zaměstnanecké číslo",
           :first_name => "Křestní jméno",
           :last_name => "Příjmení",
+          :age => "Věk",
+          :street => "Ulice",
+          :house_number => "Číslo domu",
+          :city => "Město",
+          :zip_code => "PSČ",
+          :country => "Země",
+          :note => "Poznámka",
+          :manager => "Manažer",
+          :created_at => "Vytvořeno",
+          :updated_at => "Změněno",
+        },
+        :company => {
+          :name => "Název",
+          :website => "Webová stránka",
+          :street => "Ulice",
+          :house_number => "Číslo domu",
+          :city => "Město",
+          :zip_code => "PSČ",
+          :country => "Země",
+          :created_at => "Vytvořeno",
+          :updated_at => "Změněno",
+        },
+        :phone_number => {
+          :phone_number => "Telefonní číslo",
+          :created_at => "Vytvořeno",
+          :updated_at => "Změněno",
+        },
+        :email => {
+          :email => "Emailová adresa",
+          :created_at => "Vytvořeno",
+          :updated_at => "Změněno",
         },
       }
     },
@@ -195,6 +238,8 @@
 
     # Static texts
     :txt => {
+      :choose_language => "Zvolte jazyk",
+      :example => "ukázka",
     }
   }
 }

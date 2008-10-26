@@ -40,8 +40,8 @@
     :number => {
       :format => {
         :precision => 3,
-        :separator => ',',
-        :delimiter => '.'
+        :separator => '.',
+        :delimiter => ','
       },
       :currency => {
         :format => {
@@ -86,8 +86,21 @@
       },
       :models => { 
         :employee => { 
-          :one => "Employee", :other => "Employees",
-        }
+          :one => "Employee",
+          :other => "Employees",
+        },
+        :company => {
+          :one => "Company",
+          :other => "Companies",
+        },
+        :phone_number => {
+          :one => "Phone number",
+          :other => "Phone numbers",
+        },
+        :email => {
+          :one => "Email",
+          :other => "Emails",
+        },
       },
       :attributes => {
         :employee => {
@@ -100,6 +113,8 @@
       }
     },
     :txt => {
+      :choose_language => "Choose Language",
+      :example => "Example",
     }
   }
 }
