@@ -1,4 +1,4 @@
-Searchgasm::Config.configure do |config|
+Searchlogic::Config.configure do |config|
   config.search.per_page = 50
   config.helpers.page_link_class_name = ""
   config.helpers.page_links_first_page_class_name = "first"

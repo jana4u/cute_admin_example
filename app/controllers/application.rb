@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
       end
     end
 
-    Searchgasm::Config.configure do |config|
+    Searchlogic::Config.configure do |config|
       config.helpers.page_links_next = "#{I18n.t(:next_page, :default => 'Next', :scope => [:railties, :scaffold])} &gt;"
       config.helpers.page_links_prev = "&lt; #{I18n.t(:prev_page, :default => 'Prev', :scope => [:railties, :scaffold])}"
       config.helpers.per_page_select_choices = [10, 20, 50, 100, [I18n.t(:all, :default => 'Show all', :scope => [:railties, :scaffold]), nil]]
