@@ -29,12 +29,12 @@ end
 desc "Insert sample data into database"
 task :populate_database, :roles => :db do
   rails_env = fetch(:rails_env, "production")
-  run "cd #{latest_release};rake RAILS_ENV=#{rails_env} db:populate"
+  run "cd #{latest_release}; rake RAILS_ENV=#{rails_env} db:populate"
 end
 
 desc "Generate cute_admin administration for all models, including associations"
 task :generate_cute_admin, :roles => :app do
-  run "cd #{latest_release};rake cute_admin:generate_with_associations"
+  run "cd #{latest_release}; rake RAILS_ENV=#{rails_env} cute_admin:generate_with_associations"
 end
 
 namespace :deploy do
