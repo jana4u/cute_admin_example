@@ -7,4 +7,5 @@ Searchlogic::Config.configure do |config|
   config.helpers.page_links_prev_page_class_name = "prev"
   config.helpers.page_links_current_page_class_name = "current"
   config.helpers.page_links_disabled_class_name = "disabled"
+  config.helpers.page_links_div_wrapper = true
 end
