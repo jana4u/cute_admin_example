@@ -12,7 +12,6 @@ set :user, "cuteadmin"
 
 set :use_sudo, false
 
-after "deploy:update_code", :symlink_rails
 after "deploy:migrations", :populate_database, :generate_cute_admin
 
 =begin
@@ -20,11 +19,6 @@ task :after_update_code, :roles => [:app, :db] do
   run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
 end
 =end
-
-desc "Symlink frozen rails into vendor/rails"
-task :symlink_rails, :roles => :app do
-  run "ln -nfs #{shared_path}/rails #{latest_release}/vendor/rails"
-end
 
 desc "Insert sample data into database"
 task :populate_database, :roles => :db do
