@@ -75,10 +75,3 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
 end
-
-I18n.default_locale = 'en-US'
-
-LOCALES_DIRECTORY = "#{RAILS_ROOT}/config/locales/"
-LOCALES_AVAILABLE = Dir["#{LOCALES_DIRECTORY}/*.{rb,yml}"].collect do |locale_file|
-  File.basename(File.basename(locale_file, ".rb"), ".yml")
-end.uniq.sort
