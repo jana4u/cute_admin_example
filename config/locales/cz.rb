@@ -31,6 +31,7 @@
         :default => "%a %d. %B %Y %H:%M %z",
         :short   => "%d. %m. %H:%M",
         :long    => "%A %d. %B %Y %H:%M",
+        :medium  => "%d. %m. %Y %H:%M",
         :time_only => "%H:%M",
       },
       :am => 'am',
