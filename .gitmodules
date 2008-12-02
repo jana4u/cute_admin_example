@@ -4,6 +4,3 @@
 [submodule "vendor/plugins/cute_admin"]
 	path = vendor/plugins/cute_admin
 	url = git://github.com/jana4u/cute_admin.git
-[submodule "vendor/plugins/searchlogic"]
-	path = vendor/plugins/searchlogic
-	url = git://github.com/binarylogic/searchlogic.git
