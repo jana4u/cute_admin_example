@@ -1,6 +1,3 @@
-# Czech translation file for Rails internalization demo app at http://i18n-demo.phusion.nl/
-# Translation by Karel Minařík (karmi@karmi.cz)
-
 { :cz => {
 
     # ActiveSupport
@@ -18,8 +15,8 @@
         :short   => "%d %b",
         :long    => "%d. %B %Y",
       },
-      :day_names         => %w{Sobota Neděle Pondělí Úterý Středa Čtvrtek Pátek},
-      :abbr_day_names    => %w{So Ne Po Út St Čt Pá},
+      :day_names         => %w{Neděle Pondělí Úterý Středa Čtvrtek Pátek Sobota},
+      :abbr_day_names    => %w{Ne Po Út St Čt Pá So},
       :month_names       => %w{~ Leden Únor Březen Duben Květen Červen Červenec Srpen Září Říjen Listopad Prosinec},
       :abbr_month_names  => %w{~ Led Úno Bře Dub Kvě Čvn Čvc Srp Zář Říj Lis Pro},
       :order             => [:day, :month, :year]
@@ -57,6 +54,16 @@
       :human => {
         :format => {
           :precision => 1
+        },
+        :storage_units => {
+          :format => "%n %u",
+          :units => {
+            :byte => "B",
+            :kb => "KB",
+            :mb => "MB",
+            :gb => "GB",
+            :tb => "TB",
+          }
         }
       },
       :percentage => {
@@ -75,16 +82,16 @@
       :distance_in_words => {
         :half_a_minute => 'půl minutou',
         :less_than_x_seconds => {
-          :one => 'asi před sekundou',
-          :other => 'asi před {{count}} sekundami'
+          :one => 'necelou sekundou',
+          :other => 'ani ne {{count}} sekundami'
         },
         :x_seconds => {
           :one => 'sekundou',
           :other => '{{count}} sekundami'
         },
         :less_than_x_minutes => {
-          :one => 'před necelou minutou',
-          :other => 'před ani ne {{count}} minutami'
+          :one => 'necelou minutou',
+          :other => 'ani ne {{count}} minutami'
         },
         :x_minutes => {
           :one => 'minutou',
@@ -95,7 +102,7 @@
           :other => 'asi {{count}} hodinami'
         },
         :x_days => {
-          :one => '24 hodinami',
+          :one => 'jedním dnem',
           :other => '{{count}} dny'
         },
         :about_x_months => {
@@ -149,6 +156,8 @@
           :body  => "Následující pole obsahují chybně vyplněné údaje:"
         }
       },
+
+      # ActiveRecord models
       :models => {
         :employee => {
           :one => "Zaměstnanec",
@@ -167,6 +176,8 @@
           :other => "Emailové adresy",
         },
       },
+
+      # ActiveRecord model attributes
       :attributes => {
         :employee => {
           :employee_number => "Zaměstnanecké číslo",
@@ -207,6 +218,7 @@
       }
     },
 
+    # CuteAdmin
     :railties => {
       :scaffold => {
         :listing => "{{model}} &ndash; přehled",
