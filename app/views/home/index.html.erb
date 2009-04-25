@@ -9,7 +9,7 @@
 <h1>CuteAdmin <%= t 'txt.example' %></h1>
 
 <% form_tag '', {:method => "get"} do %>
-  <div><%= t 'txt.choose_language' %>: <%= select_tag("locale", options_for_select(LOCALES_AVAILABLE, I18n.locale), { :index => nil, :onchange => 'this.form.submit()'}) %></div>
+  <div><%= t 'txt.choose_language' %>: <%= select_tag("locale", options_for_select(LOCALES_AVAILABLE, I18n.locale.to_s), { :index => nil, :onchange => 'this.form.submit()'}) %></div>
 <% end %>
 
 <ul>
