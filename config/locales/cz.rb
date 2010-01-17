@@ -25,10 +25,9 @@
     # Time
     :time => {
       :formats => {
-        :default => "%a %d. %B %Y %H:%M %z",
+        :default => "%d. %m. %Y %H:%M",
         :short   => "%d. %m. %H:%M",
         :long    => "%A %d. %B %Y %H:%M",
-        :medium  => "%d. %m. %Y %H:%M",
         :time_only => "%H:%M",
       },
       :am => 'am',

@@ -7,8 +7,8 @@
     },
     :time => {
       :formats => {
+        :default  => "%Y-%m-%d %H:%M",
         :long_ordinal => lambda { |time| "%B #{time.day.ordinalize}, %Y %H:%M" },
-        :medium  => "%Y-%m-%d %H:%M",
         :time_only => "%H:%M"
       },
       :time_with_zone => {
