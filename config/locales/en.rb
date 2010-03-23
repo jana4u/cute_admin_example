@@ -114,6 +114,38 @@
         }
       }
     },
+
+    # CuteAdmin
+    :railties => {
+      :scaffold => {
+        :listing => "Listing {{model}}",
+        :new => "New {{model}}",
+        :editing => "Editing {{model}}",
+        :show => "Show",
+        :edit => "Edit",
+        :destroy => "Destroy",
+        :confirmation => "Are you sure?",
+        :back => "Back",
+        :create => "Create",
+        :update => "Update",
+        :created_success => "{{model}} was successfully created",
+        :updated_success => "{{model}} was successfully updated",
+        :new_record => "New {{model}}",
+        :filter => "Filter",
+        :all => "[ all ]",
+        :choose => "[ choose ]",
+        :destroy_confirmation => "Destroy '{{record}}'?",
+        :total => "Total",
+        :per_page => "Per page",
+        :page => "Page",
+        :next_page => "Next",
+        :prev_page => "Prev",
+        :true => "Yes",
+        :false => "No",
+        :default_view => "Default view",
+      }
+    },
+
     :txt => {
       :choose_language => "Choose Language",
       :example => "Example",

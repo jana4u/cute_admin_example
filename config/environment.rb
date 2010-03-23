@@ -28,7 +28,8 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "sqlite3-ruby", :lib => "sqlite3"
-  config.gem "searchlogic", :version => "~> 1.6.6"
+  config.gem "searchlogic", :version => '~> 2.4.12'
+  config.gem 'will_paginate', :version => '~> 2.3.12'
   config.gem "populator", :version => ">= 0.2.4"
   config.gem "faker", :version => ">= 0.3.1"
 
