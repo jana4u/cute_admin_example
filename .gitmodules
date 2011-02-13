@@ -1,6 +1,3 @@
-[submodule "vendor/plugins/i18n_label"]
-	path = vendor/plugins/i18n_label
-	url = git://github.com/iain/i18n_label.git
 [submodule "vendor/plugins/cute_admin"]
 	path = vendor/plugins/cute_admin
 	url = git://github.com/jana4u/cute_admin.git

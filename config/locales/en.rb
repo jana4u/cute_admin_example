@@ -25,16 +25,16 @@
     :datetime => {
       :distance_in_words => {
         :half_a_minute       => 'half a minute',
-        :less_than_x_seconds => {:zero => 'less than 1 second', :one => '1 second', :other => '{{count}} seconds'},
-        :x_seconds           => {:one => '1 second', :other => '{{count}} seconds'},
-        :less_than_x_minutes => {:zero => 'less than a minute', :one => '1 minute', :other => '{{count}} minutes'},
-        :x_minutes           => {:one => "1 minute", :other => "{{count}} minutes"},
-        :about_x_hours       => {:one => 'about 1 hour', :other => '{{count}} hours'},
-        :x_days              => {:one => '1 day', :other => '{{count}} days'},
-        :about_x_months      => {:one => 'about 1 month', :other => '{{count}} months'},
-        :x_months            => {:one => '1 month', :other => '{{count}} months'},
-        :about_x_years       => {:one => 'about 1 year', :other => '{{count}} years'},
-        :over_x_years        => {:one => 'over 1 year', :other => '{{count}} years'}
+        :less_than_x_seconds => {:zero => 'less than 1 second', :one => '1 second', :other => '%{count} seconds'},
+        :x_seconds           => {:one => '1 second', :other => '%{count} seconds'},
+        :less_than_x_minutes => {:zero => 'less than a minute', :one => '1 minute', :other => '%{count} minutes'},
+        :x_minutes           => {:one => "1 minute", :other => "%{count} minutes"},
+        :about_x_hours       => {:one => 'about 1 hour', :other => '%{count} hours'},
+        :x_days              => {:one => '1 day', :other => '%{count} days'},
+        :about_x_months      => {:one => 'about 1 month', :other => '%{count} months'},
+        :x_months            => {:one => '1 month', :other => '%{count} months'},
+        :about_x_years       => {:one => 'about 1 year', :other => '%{count} years'},
+        :over_x_years        => {:one => 'over 1 year', :other => '%{count} years'}
       }
     },
 
@@ -56,11 +56,11 @@
 
     # Active Record
     :activerecord => {
-      :errors => { 
+      :errors => {
         :template => {
           :header => {
-            :one => "Couldn't save this {{model}}: 1 error", 
-            :other => "Couldn't save this {{model}}: {{count}} errors."
+            :one => "Couldn't save this %{model}: 1 error",
+            :other => "Couldn't save this %{model}: %{count} errors."
           },
           :body => "Please check the following fields:"
         },
@@ -72,22 +72,22 @@
           :accepted  => "must be accepted",
           :empty => "must be given",
           :blank => "must be given",
-          :too_long => "is too long (no more than {{count}} characters)",
-          :too_short => "is too short (no less than {{count}} characters)",
-          :wrong_length => "is not the right length (must be {{count}} characters)",
+          :too_long => "is too long (no more than %{count} characters)",
+          :too_short => "is too short (no less than %{count} characters)",
+          :wrong_length => "is not the right length (must be %{count} characters)",
           :taken => "is not available",
           :not_a_number => "is not a number",
-          :greater_than => "must be greater than {{count}}",
-          :greater_than_or_equal_to => "must be greater than or equal to {{count}}",
-          :equal_to => "must be equal to {{count}}",
-          :less_than => "must be less than {{count}}",
-          :less_than_or_equal_to => "must be less than or equal to {{count}}",
+          :greater_than => "must be greater than %{count}",
+          :greater_than_or_equal_to => "must be greater than or equal to %{count}",
+          :equal_to => "must be equal to %{count}",
+          :less_than => "must be less than %{count}",
+          :less_than_or_equal_to => "must be less than or equal to %{count}",
           :odd => "must be odd",
           :even => "must be even"
         }
       },
-      :models => { 
-        :employee => { 
+      :models => {
+        :employee => {
           :one => "Employee",
           :other => "Employees",
         },
@@ -118,9 +118,9 @@
     # CuteAdmin
     :railties => {
       :scaffold => {
-        :listing => "Listing {{model}}",
-        :new => "New {{model}}",
-        :editing => "Editing {{model}}",
+        :listing => "Listing %{model}",
+        :new => "New %{model}",
+        :editing => "Editing %{model}",
         :show => "Show",
         :edit => "Edit",
         :destroy => "Destroy",
@@ -128,13 +128,13 @@
         :back => "Back",
         :create => "Create",
         :update => "Update",
-        :created_success => "{{model}} was successfully created",
-        :updated_success => "{{model}} was successfully updated",
-        :new_record => "New {{model}}",
+        :created_success => "%{model} was successfully created",
+        :updated_success => "%{model} was successfully updated",
+        :new_record => "New %{model}",
         :filter => "Filter",
         :all => "[ all ]",
         :choose => "[ choose ]",
-        :destroy_confirmation => "Destroy '{{record}}'?",
+        :destroy_confirmation => "Destroy '%{record}'?",
         :total => "Total",
         :per_page => "Per page",
         :page => "Page",

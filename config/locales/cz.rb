@@ -82,43 +82,43 @@
         :half_a_minute => 'půl minutou',
         :less_than_x_seconds => {
           :one => 'necelou sekundou',
-          :other => 'ani ne {{count}} sekundami'
+          :other => 'ani ne %{count} sekundami'
         },
         :x_seconds => {
           :one => 'sekundou',
-          :other => '{{count}} sekundami'
+          :other => '%{count} sekundami'
         },
         :less_than_x_minutes => {
           :one => 'necelou minutou',
-          :other => 'ani ne {{count}} minutami'
+          :other => 'ani ne %{count} minutami'
         },
         :x_minutes => {
           :one => 'minutou',
-          :other => '{{count}} minutami'
+          :other => '%{count} minutami'
         },
         :about_x_hours => {
           :one => 'asi hodinou',
-          :other => 'asi {{count}} hodinami'
+          :other => 'asi %{count} hodinami'
         },
         :x_days => {
           :one => 'jedním dnem',
-          :other => '{{count}} dny'
+          :other => '%{count} dny'
         },
         :about_x_months => {
           :one => 'asi měsícem',
-          :other => 'asi {{count}} měsíci'
+          :other => 'asi %{count} měsíci'
         },
         :x_months => {
           :one => 'měsícem',
-          :other => '{{count}} měsíci'
+          :other => '%{count} měsíci'
         },
         :about_x_years => {
           :one => 'asi rokem',
-          :other => 'asi {{count}} roky'
+          :other => 'asi %{count} roky'
         },
         :over_x_years => {
           :one => 'více než před rokem',
-          :other => 'více než {{count}} roky'
+          :other => 'více než %{count} roky'
         }
       }
     },
@@ -134,23 +134,23 @@
           :accepted            => "musí být potvrzeno",
           :empty               => "nesmí být prázdný/é",
           :blank               => "je povinná položka", # alternate formulation: "is required"
-          :too_long            => "je příliš dlouhá/ý (max. {{count}} znaků)",
-          :too_short           => "je příliš krátký/á (min. {{count}} znaků)",
-          :wrong_length        => "nemá správnou délku (očekáváno {{count}} znaků)",
+          :too_long            => "je příliš dlouhá/ý (max. %{count} znaků)",
+          :too_short           => "je příliš krátký/á (min. %{count} znaků)",
+          :wrong_length        => "nemá správnou délku (očekáváno %{count} znaků)",
           :taken               => "již databáze obsahuje",
           :not_a_number        => "není číslo",
-          :greater_than        => "musí být větší než {{count}}",
-          :greater_than_or_equal_to => "musí být větší nebo rovno {{count}}",
-          :equal_to            => "musí být rovno {{count}}",
-          :less_than           => "musí být méně než {{count}}",
-          :less_than_or_equal_to    => "musí být méně nebo rovno {{count}}",
+          :greater_than        => "musí být větší než %{count}",
+          :greater_than_or_equal_to => "musí být větší nebo rovno %{count}",
+          :equal_to            => "musí být rovno %{count}",
+          :less_than           => "musí být méně než %{count}",
+          :less_than_or_equal_to    => "musí být méně nebo rovno %{count}",
           :odd                 => "musí být liché číslo",
           :even                => "musí být sudé číslo"
         },
         :template => {
           :header   => {
-            :one => "Při ukládání záznamu {{model}} došlo k chybám a nebylo jej možné uložit",
-            :other => "Při ukládání záznamu {{model}} došlo ke {{count}} chybám a nebylo možné jej uložit"
+            :one => "Při ukládání záznamu %{model} došlo k chybám a nebylo jej možné uložit",
+            :other => "Při ukládání záznamu %{model} došlo ke %{count} chybám a nebylo možné jej uložit"
           },
           :body  => "Následující pole obsahují chybně vyplněné údaje:"
         }
@@ -220,9 +220,9 @@
     # CuteAdmin
     :railties => {
       :scaffold => {
-        :listing => "{{model}} &ndash; přehled",
-        :new => "{{model}} &ndash; nový záznam",
-        :editing => "{{model}} &ndash; úprava záznamu",
+        :listing => "%{model} &ndash; přehled",
+        :new => "%{model} &ndash; nový záznam",
+        :editing => "%{model} &ndash; úprava záznamu",
         :show => "Zobrazit",
         :edit => "Upravit",
         :destroy => "Odstranit",
@@ -230,13 +230,13 @@
         :back => "Zpět",
         :create => "Vytvořit",
         :update => "Uložit",
-        :created_success => "{{model}} &ndash; záznam byl vytvořen",
-        :updated_success => "{{model}} &ndash; změny byly uloženy",
+        :created_success => "%{model} &ndash; záznam byl vytvořen",
+        :updated_success => "%{model} &ndash; změny byly uloženy",
         :new_record => "Nový záznam",
         :filter => "Filtrovat",
         :all => "[ vše ]",
         :choose => "[ zvolte ]",
-        :destroy_confirmation => "Opravdu odstranit '{{record}}'?",
+        :destroy_confirmation => "Opravdu odstranit '%{record}'?",
         :total => "Celkem záznamů",
         :per_page => "Stránkovat po",
         :page => "Stránka",
